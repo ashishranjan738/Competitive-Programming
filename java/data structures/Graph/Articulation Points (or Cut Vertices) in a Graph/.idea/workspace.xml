@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d05d04f-ef44-4cc7-b896-97b8b9c09075" name="Default Changelist" comment="" />
+    <list default="true" id="4d05d04f-ef44-4cc7-b896-97b8b9c09075" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Graph/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Graph/com/company/PrintPathOneNodeToAnother.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Graph/com/company/RottenOranges$loc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Graph/com/company/RottenOranges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Graph/com/company/StepByKNight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/PrintPathOneNodeToAnother.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/RottenOranges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/com/company/StepByKNight.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
   <component name="ProjectId" id="1TNEApyoDQWqH5jL0hCrvVDfeDk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -59,11 +77,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573292011300</updated>
-      <workItem from="1573292012527" duration="4678000" />
+      <workItem from="1573292012527" duration="5898000" />
+      <workItem from="1573321766702" duration="81000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

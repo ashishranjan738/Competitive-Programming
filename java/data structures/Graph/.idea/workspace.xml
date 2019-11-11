@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ab7efc8-0566-43aa-b29f-73bec2dd5b8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/RottenOranges.java" afterDir="false" />
+    <list default="true" id="f1e2fa68-9123-4e4f-ad23-2a10fcfe0872" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/com/company/PrintPathOneNodeToAnother.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/com/company/RottenOranges$loc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/com/company/RottenOranges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/com/company/StepByKNight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PrintPathOneNodeToAnother.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RottenOranges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StepByKNight.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,17 +23,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1T9j4cqCT3WaVxFFzdl36Qty61f" />
+  <component name="ProjectId" id="1TNE2SqmsZcOUYaV8DPDjzARfHg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -39,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RottenOranges">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Graph" />
@@ -50,56 +55,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RottenOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.RottenOranges" />
-      <module name="Graph" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StepByKNight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.StepByKNight" />
-      <module name="Graph" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.StepByKNight" />
-      <item itemvalue="Application.RottenOranges" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.RottenOranges" />
-        <item itemvalue="Application.StepByKNight" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ab7efc8-0566-43aa-b29f-73bec2dd5b8a" name="Default Changelist" comment="" />
-      <created>1572879014984</created>
+      <changelist id="f1e2fa68-9123-4e4f-ad23-2a10fcfe0872" name="Default Changelist" comment="" />
+      <created>1573291945310</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572879014984</updated>
-      <workItem from="1572879018621" duration="4514000" />
-      <workItem from="1573049080675" duration="3522000" />
+      <updated>1573291945310</updated>
+      <workItem from="1573291946556" duration="9000" />
     </task>
     <servers />
   </component>
@@ -116,31 +83,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/StepByKNight.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/StepByKNight.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/StepByKNight.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/StepByKNight.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

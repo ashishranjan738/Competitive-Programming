@@ -2,6 +2,8 @@ package com.company;
 
 import java.util.ArrayList;
 
+// This algorithm is also known as Tarjans algorithm.
+
 // Approach for finding the Articulation points is to use DFS (Depth First Search). In DFS, we follow vertices in tree form called DFS tree.
 // In DFS tree, a vertex u is parent of another vertex v, if v is discovered by u (obviously v is an adjacent of u in graph). In DFS tree, a
 // vertex u is articulation point if one of the following two conditions is true.
