@@ -1,3 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    string Solution::getPermutation(int A, int B);
+};
+
 // The set [1,2,3,…,n] contains a total of n! unique permutations.
 
 // By listing and labeling all of the permutations in order,

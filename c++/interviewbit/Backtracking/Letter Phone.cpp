@@ -1,3 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    vector<string> Solution::letterCombinations(string A);
+};
 // Given a digit string, return all possible letter combinations that the number could represent.
 
 // A mapping of digit to letters (just like on the telephone buttons) is given below.

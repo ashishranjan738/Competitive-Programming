@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
-    public:
-    vector<vector<int>> subsets(vector<int> &);
+class Solution
+{
+public:
+    vector<vector<int>> Solution::subsets(vector<int> &A);
 };
 // Given a set of distinct integers, S, return all possible subsets.
 
