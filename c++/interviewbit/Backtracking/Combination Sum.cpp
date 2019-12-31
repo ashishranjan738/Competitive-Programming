@@ -4,7 +4,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<vector<int> > Solution::combinationSum(vector<int> &A, int B);
+    vector<vector<int>> Solution::combinationSum(vector<int> &A, int B);
 };
 
 // Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
@@ -25,28 +25,33 @@ public:
 // [7]
 //  Warning : DO NOT USE LIBRARY FUNCTION FOR GENERATING COMBINATIONS.
 // Example : itertools.combinations in python.
-// If you do, we will disqualify your submission retroactively and give you penalty points. 
+// If you do, we will disqualify your submission retroactively and give you penalty points.
 
-void solve(vector<int> &candidates,int target,int sum,vector<int> &tans,vector<vector<int>> &ans){
-    if(sum>target)
+void solve(vector<int> &candidates, int target, int sum, vector<int> &tans, vector<vector<int>> &ans)
+{
+    if (sum > target)
         return;
-    else if(sum==target){
+    else if (sum == target)
+    {
         ans.push_back(tans);
         return;
     }
-    for(int a:candidates){
-        if(tans.size()==0 || (tans.size() && a>=tans.back())){
+    for (int a : candidates)
+    {
+        if (tans.size() == 0 || (tans.size() && a >= tans.back()))
+        {
             tans.push_back(a);
-            solve(candidates,target,sum+a,tans,ans);
+            solve(candidates, target, sum + a, tans, ans);
             tans.pop_back();
         }
     }
 }
-vector<vector<int> > Solution::combinationSum(vector<int> &A, int B) {
+vector<vector<int>> Solution::combinationSum(vector<int> &A, int B)
+{
     vector<vector<int>> ans;
     vector<int> tans;
-    set<int> s(A.begin(),A.end());
-    A=vector<int> (s.begin(),s.end());
-    solve(A,B,0,tans,ans);
+    set<int> s(A.begin(), A.end());
+    A = vector<int>(s.begin(), s.end());
+    solve(A, B, 0, tans, ans);
     return ans;
 }

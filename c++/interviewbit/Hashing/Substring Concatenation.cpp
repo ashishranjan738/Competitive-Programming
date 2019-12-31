@@ -29,7 +29,6 @@ vector<int> Solution::findSubstring(string A, const vector<string> &B)
     int n = A.length(), wn = B.front().length();
     for (int i = 0; i < n; i++)
     {
-        ;
         unordered_map<string, int> m = dict;
         int count = 0;
         for (int j = i; j < n && j < i + wn * B.size(); j += wn)
