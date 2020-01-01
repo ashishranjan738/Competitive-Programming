@@ -4,7 +4,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<vector<string> > Solution::solveNQueens(int n);
+    vector<vector<string>> Solution::solveNQueens(int n);
 };
 
 // The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
@@ -30,71 +30,87 @@ public:
 //   ".Q.."]
 // ]
 
-void markVisited(vector<vector<int>> &visited,int i,int j,int n){
+void markVisited(vector<vector<int>> &visited, int i, int j, int n)
+{
     visited[i][j]++;
-    for(int x=1;x<n;x++){
+    for (int x = 1; x < n; x++)
+    {
         visited[i][x]++;
         visited[x][j]++;
-        int dx=i+x;int dy=j+x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        int dx = i + x;
+        int dy = j + x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]++;
-        dx=i-x;dy=j-x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i - x;
+        dy = j - x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]++;
-        dx=i-x;dy=j+x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i - x;
+        dy = j + x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]++;
-        dx=i+x;dy=j-x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i + x;
+        dy = j - x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]++;
     }
 }
-void unMarkVisited(vector<vector<int>> &visited,int i,int j,int n){
+void unMarkVisited(vector<vector<int>> &visited, int i, int j, int n)
+{
     visited[i][j]--;
-    for(int x=1;x<n;x++){
+    for (int x = 1; x < n; x++)
+    {
         visited[i][x]--;
         visited[x][j]--;
-        int dx=i+x;int dy=j+x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        int dx = i + x;
+        int dy = j + x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]--;
-        dx=i-x;dy=j-x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i - x;
+        dy = j - x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]--;
-        dx=i-x;dy=j+x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i - x;
+        dy = j + x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]--;
-        dx=i+x;dy=j-x;
-        if(dx<n && dy<n && dx>=0 && dy>=0)
+        dx = i + x;
+        dy = j - x;
+        if (dx < n && dy < n && dx >= 0 && dy >= 0)
             visited[dx][dy]--;
     }
 }
-void solve(int n,int p,vector<vector<string>> &ans,vector<string> &current,vector<vector<int>> &visited){
-    if(n==p){
+void solve(int n, int p, vector<vector<string>> &ans, vector<string> &current, vector<vector<int>> &visited)
+{
+    if (n == p)
+    {
         ans.push_back(current);
         return;
     }
     string s;
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
         s.push_back('.');
-    for(int i=0;i<n;i++){
-        if(visited[p][i]==0){
-            s[i]='Q';
-            markVisited(visited,p,i,n);
+    for (int i = 0; i < n; i++)
+    {
+        if (visited[p][i] == 0)
+        {
+            s[i] = 'Q';
+            markVisited(visited, p, i, n);
             current.push_back(s);
-            solve(n,p+1,ans,current,visited);
+            solve(n, p + 1, ans, current, visited);
             current.pop_back();
-            unMarkVisited(visited,p,i,n);
-            s[i]='.';
+            unMarkVisited(visited, p, i, n);
+            s[i] = '.';
         }
     }
 }
 
-
-vector<vector<string> > Solution::solveNQueens(int n) {
+vector<vector<string>> Solution::solveNQueens(int n)
+{
     vector<vector<string>> ans;
-    vector<vector<int>> visited(n,vector<int> (n,0));
+    vector<vector<int>> visited(n, vector<int>(n, 0));
     vector<string> tans;
-    solve(n,0,ans,tans,visited);
+    solve(n, 0, ans, tans, visited);
     return ans;
 }
 
