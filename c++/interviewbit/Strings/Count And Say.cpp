@@ -29,27 +29,25 @@ string generateNextSequence(string a)
 {
     if (a == "")
         return "1";
-    unordered_map<char, int> m;
     char previous = a[0];
+    int occurrence = 1;
     string b;
-    m[previous]++;
     for (int i = 1; i < a.length(); i++)
     {
         char c = a[i];
         if (previous != c)
         {
-            b += to_string(m[previous]);
+            b += to_string(occurrence);
             b.push_back(previous);
-            m.clear();
+            occurrence = 0;
         }
-        m[c]++;
+        occurrence++;
         previous = c;
     }
-    if (m[previous])
+    if (occurrence > 0)
     {
-        b += to_string(m[previous]);
+        b += to_string(occurrence);
         b.push_back(previous);
-        m.clear();
     }
     return b;
 }
