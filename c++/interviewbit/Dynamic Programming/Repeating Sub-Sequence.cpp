@@ -117,3 +117,7 @@ int Solution::anytwo(string A)
 {
     return checkForRepeatedSubsequence(A);
 }
+
+// References:
+// https://www.tutorialcup.com/string/repeated-subsequence-length-2-more.htm
+// https://www.geeksforgeeks.org/repeated-subsequence-length-2/
