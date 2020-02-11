@@ -1,21 +1,25 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++)
-        cin>>arr[i];
-    int maxSumEndingHere=0;
-    int maxSumSoFar=0;
-    for(int i=0;i<n;i++){
-            maxSumEndingHere+=arr[i];
-        if(maxSumEndingHere<0)
-            maxSumEndingHere=0;
-        if(maxSumSoFar<maxSumEndingHere)
-            maxSumSoFar=maxSumEndingHere;
 
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int maxSum = INT_MIN, maxSumSoFar = 0;
+        for (int i = 0; i < n; i++)
+        {
+            int x;
+            cin >> x;
+            maxSumSoFar += x;
+            maxSum = max(maxSum, maxSumSoFar);
+            if (maxSumSoFar < 0)
+                maxSumSoFar = 0;
+        }
+        cout << maxSum << endl;
     }
-    cout<<maxSumSoFar<<endl;
     return 0;
 }
