@@ -33,6 +33,8 @@ public:
 
 // No operation can give us more than three 1s in final string. So, we return empty array [].
 
+// Hint:
+// use kadane's algorithm
 vector<int> Solution::flip(string A)
 {
     int ansi = -1, ansj = -1, sum = 0, i = 0, j = 0, ansSum = 0;
