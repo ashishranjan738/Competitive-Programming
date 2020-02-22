@@ -20,7 +20,9 @@ public:
 // f(2, 3) = f(3, 2) = |3 - (-1)| + |2 - 3| = 5
 
 // So, we return 5.
+
 /*
+Hint:
 An efficient solution in O(n) time complexity can be worked out using the properties of absolute values.
 f(i, j) = |A[i] – A[j]| + |i – j| can be written in 4 ways (Since we are looking at max value, we don’t even care if the value becomes negative as long as we are also covering the max value in some way).
 
